@@ -63,7 +63,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.phoneTextBox1 = new SoftwareTas.components.PhoneTextBox();
+            this.orangePhoneTextBox1 = new SoftwareTas.components.OrangePhoneTextBox();
+            this.mtnPhoneTextBox1 = new SoftwareTas.components.MtnPhoneTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -267,6 +269,7 @@
             this.textBox6.Size = new System.Drawing.Size(168, 20);
             this.textBox6.TabIndex = 5;
             this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
+            this.textBox6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox6_KeyUp);
             // 
             // label8
             // 
@@ -384,19 +387,40 @@
             this.textBox3.Size = new System.Drawing.Size(201, 20);
             this.textBox3.TabIndex = 22;
             // 
-            // phoneTextBox1
+            // orangePhoneTextBox1
             // 
-            this.phoneTextBox1.Location = new System.Drawing.Point(65, 361);
-            this.phoneTextBox1.Name = "phoneTextBox1";
-            this.phoneTextBox1.Size = new System.Drawing.Size(136, 20);
-            this.phoneTextBox1.TabIndex = 34;
+            this.orangePhoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.orangePhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.orangePhoneTextBox1.Location = new System.Drawing.Point(256, 363);
+            this.orangePhoneTextBox1.Name = "orangePhoneTextBox1";
+            this.orangePhoneTextBox1.Size = new System.Drawing.Size(171, 20);
+            this.orangePhoneTextBox1.TabIndex = 36;
+            // 
+            // mtnPhoneTextBox1
+            // 
+            this.mtnPhoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.mtnPhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.mtnPhoneTextBox1.Location = new System.Drawing.Point(40, 360);
+            this.mtnPhoneTextBox1.Name = "mtnPhoneTextBox1";
+            this.mtnPhoneTextBox1.Size = new System.Drawing.Size(158, 20);
+            this.mtnPhoneTextBox1.TabIndex = 35;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(97, 443);
+            this.maskedTextBox1.Mask = "00-00-00-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(209, 20);
+            this.maskedTextBox1.TabIndex = 37;
             // 
             // FormRevision1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 482);
-            this.Controls.Add(this.phoneTextBox1);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.orangePhoneTextBox1);
+            this.Controls.Add(this.mtnPhoneTextBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -468,6 +492,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private components.PhoneTextBox phoneTextBox1;
+        private components.MtnPhoneTextBox mtnPhoneTextBox1;
+        private components.OrangePhoneTextBox orangePhoneTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

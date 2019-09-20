@@ -42,6 +42,10 @@ namespace SoftwareTas
             }
 
         }
+
+        private void textBox6_KeyUp(object sender, KeyEventArgs e)
+        {
             
+        }
     }
 }

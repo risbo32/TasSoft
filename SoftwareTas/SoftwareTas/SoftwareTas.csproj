@@ -117,6 +117,15 @@
     <Compile Include="TreeDepartement.Designer.cs">
       <DependentUpon>TreeDepartement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="components\MtnPhoneTextBox.resx">
+      <DependentUpon>MtnPhoneTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\OrangePhoneTextBox.resx">
+      <DependentUpon>OrangePhoneTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\PhoneTextBox.resx">
+      <DependentUpon>PhoneTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEtudiant.resx">
       <DependentUpon>FormEtudiant.cs</DependentUpon>
     </EmbeddedResource>

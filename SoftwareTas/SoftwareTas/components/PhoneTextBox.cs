@@ -8,9 +8,20 @@ using System.Windows.Forms;
 
 namespace SoftwareTas.components
 {
-    public class PhoneTextBox : TextBox
+    public class PhoneTextBox : MaskedTextBox
     {
-        private int MaxLengthPhone = 10;
+        /// <summary>
+        /// Couleur d'erreur;
+        /// </summary>
+       public Color colorError { get; set; } = Color.Red;
+        /// <summary>
+        /// Couleur en cas de numero correct
+        /// </summary>
+      public Color colorSucces { get; set; } = Color.Aqua;
+        private int MaxLengthPhone = 9;
+
+
+
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
             base.OnKeyPress(e);
@@ -30,5 +41,25 @@ namespace SoftwareTas.components
             }
         }
 
+        /// <summary>
+        /// Verifie si le numero entre est correspond a l'expression reguliere
+        /// </summary>
+        /// <returns></returns>
+      virtual  public  bool IsPhoneNumberValid()
+        {
+            return true;
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // PhoneTextBox
+            // 
+            this.Mask = "00-00-00-00";
+            this.Text = "  -  -  -";
+            this.ResumeLayout(false);
+
+        }
     }
 }
