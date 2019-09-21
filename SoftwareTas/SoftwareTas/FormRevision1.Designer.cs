@@ -43,12 +43,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -59,16 +53,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.orangePhoneTextBox1 = new SoftwareTas.components.OrangePhoneTextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.mtnPhoneTextBox1 = new SoftwareTas.components.MtnPhoneTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.orangePhoneTextBox1 = new SoftwareTas.components.OrangePhoneTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.nextellPhoneTextBox1 = new SoftwareTas.components.NextellPhoneTextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.camtelPhoneTextBox1 = new SoftwareTas.components.CamtelPhoneTextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.phoneTextBox1 = new SoftwareTas.components.PhoneTextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -94,7 +102,7 @@
             // 
             this.groupBox3.Controls.Add(this.radioButton4);
             this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Location = new System.Drawing.Point(195, 389);
+            this.groupBox3.Location = new System.Drawing.Point(195, 418);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(271, 47);
             this.groupBox3.TabIndex = 32;
@@ -164,7 +172,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(62, 409);
+            this.label13.Location = new System.Drawing.Point(62, 438);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(113, 13);
             this.label13.TabIndex = 27;
@@ -181,19 +189,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Location = new System.Drawing.Point(40, 230);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(733, 124);
+            this.groupBox1.Size = new System.Drawing.Size(733, 197);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parent";
@@ -220,56 +223,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(265, 20);
             this.textBox5.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(505, 81);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 13);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Tel 2:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(270, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Tel 2:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 78);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Tel 1:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(545, 78);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(168, 20);
-            this.textBox8.TabIndex = 5;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(310, 75);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(168, 20);
-            this.textBox7.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(85, 75);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(168, 20);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
-            this.textBox6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox6_KeyUp);
             // 
             // label8
             // 
@@ -357,21 +310,14 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Noms";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(483, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 20);
-            this.textBox2.TabIndex = 19;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(438, 69);
+            this.label4.Location = new System.Drawing.Point(374, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.Size = new System.Drawing.Size(112, 13);
             this.label4.TabIndex = 17;
-            this.label4.Text = "ID";
+            this.label4.Text = "Code d\'enregistrement";
             // 
             // textBox4
             // 
@@ -387,40 +333,183 @@
             this.textBox3.Size = new System.Drawing.Size(201, 20);
             this.textBox3.TabIndex = 22;
             // 
-            // orangePhoneTextBox1
+            // groupBox4
             // 
-            this.orangePhoneTextBox1.colorError = System.Drawing.Color.Red;
-            this.orangePhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
-            this.orangePhoneTextBox1.Location = new System.Drawing.Point(256, 363);
-            this.orangePhoneTextBox1.Name = "orangePhoneTextBox1";
-            this.orangePhoneTextBox1.Size = new System.Drawing.Size(171, 20);
-            this.orangePhoneTextBox1.TabIndex = 36;
+            this.groupBox4.Controls.Add(this.phoneTextBox1);
+            this.groupBox4.Controls.Add(this.camtelPhoneTextBox1);
+            this.groupBox4.Controls.Add(this.nextellPhoneTextBox1);
+            this.groupBox4.Controls.Add(this.checkBox4);
+            this.groupBox4.Controls.Add(this.checkBox2);
+            this.groupBox4.Controls.Add(this.checkBox3);
+            this.groupBox4.Controls.Add(this.checkBox5);
+            this.groupBox4.Controls.Add(this.checkBox1);
+            this.groupBox4.Controls.Add(this.mtnPhoneTextBox1);
+            this.groupBox4.Controls.Add(this.orangePhoneTextBox1);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Location = new System.Drawing.Point(19, 71);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(662, 111);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Numero telephone";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(204, 34);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 42;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(395, 33);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 43;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // mtnPhoneTextBox1
             // 
             this.mtnPhoneTextBox1.colorError = System.Drawing.Color.Red;
             this.mtnPhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
-            this.mtnPhoneTextBox1.Location = new System.Drawing.Point(40, 360);
+            this.mtnPhoneTextBox1.Location = new System.Drawing.Point(291, 30);
+            this.mtnPhoneTextBox1.Mask = "000-00-00-00";
             this.mtnPhoneTextBox1.Name = "mtnPhoneTextBox1";
-            this.mtnPhoneTextBox1.Size = new System.Drawing.Size(158, 20);
-            this.mtnPhoneTextBox1.TabIndex = 35;
+            this.mtnPhoneTextBox1.Size = new System.Drawing.Size(95, 20);
+            this.mtnPhoneTextBox1.TabIndex = 40;
             // 
-            // maskedTextBox1
+            // orangePhoneTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(97, 443);
-            this.maskedTextBox1.Mask = "00-00-00-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(209, 20);
-            this.maskedTextBox1.TabIndex = 37;
+            this.orangePhoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.orangePhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.orangePhoneTextBox1.Location = new System.Drawing.Point(92, 28);
+            this.orangePhoneTextBox1.Mask = "000-00-00-00";
+            this.orangePhoneTextBox1.Name = "orangePhoneTextBox1";
+            this.orangePhoneTextBox1.Size = new System.Drawing.Size(106, 20);
+            this.orangePhoneTextBox1.TabIndex = 41;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(242, 31);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 13);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Tel Mtn";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(26, 31);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 13);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Tel Orange";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(445, 34);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "Nextel";
+            // 
+            // nextellPhoneTextBox1
+            // 
+            this.nextellPhoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.nextellPhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.nextellPhoneTextBox1.Location = new System.Drawing.Point(489, 33);
+            this.nextellPhoneTextBox1.Mask = "000-00-00-00";
+            this.nextellPhoneTextBox1.Name = "nextellPhoneTextBox1";
+            this.nextellPhoneTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.nextellPhoneTextBox1.TabIndex = 44;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(600, 38);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 43;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // camtelPhoneTextBox1
+            // 
+            this.camtelPhoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.camtelPhoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.camtelPhoneTextBox1.Location = new System.Drawing.Point(92, 66);
+            this.camtelPhoneTextBox1.Mask = "000-00-00-00";
+            this.camtelPhoneTextBox1.Name = "camtelPhoneTextBox1";
+            this.camtelPhoneTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.camtelPhoneTextBox1.TabIndex = 45;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(26, 73);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(57, 13);
+            this.label15.TabIndex = 39;
+            this.label15.Text = "Tel Camtel";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(204, 69);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 42;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // phoneTextBox1
+            // 
+            this.phoneTextBox1.colorError = System.Drawing.Color.Red;
+            this.phoneTextBox1.colorSucces = System.Drawing.Color.Aqua;
+            this.phoneTextBox1.Location = new System.Drawing.Point(291, 70);
+            this.phoneTextBox1.Name = "phoneTextBox1";
+            this.phoneTextBox1.Size = new System.Drawing.Size(114, 20);
+            this.phoneTextBox1.TabIndex = 46;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(248, 73);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(37, 13);
+            this.label16.TabIndex = 39;
+            this.label16.Text = "Autres";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(412, 75);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 43;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(492, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(25, 13);
+            this.label17.TabIndex = 17;
+            this.label17.Text = "001";
             // 
             // FormRevision1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 482);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.orangePhoneTextBox1);
-            this.Controls.Add(this.mtnPhoneTextBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -438,7 +527,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -450,6 +539,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,12 +563,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -488,12 +573,25 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private components.PhoneTextBox phoneTextBox1;
+        private components.CamtelPhoneTextBox camtelPhoneTextBox1;
+        private components.NextellPhoneTextBox nextellPhoneTextBox1;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox1;
         private components.MtnPhoneTextBox mtnPhoneTextBox1;
         private components.OrangePhoneTextBox orangePhoneTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label17;
     }
 }

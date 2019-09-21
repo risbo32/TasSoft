@@ -13,9 +13,14 @@ namespace SoftwareTas.components
     /// </summary>
     public class OrangePhoneTextBox : PhoneTextBox
     {
-        static string numberPattern = @"655[0-9]{6}|69[0-9]{7}";
+        static string numberPattern = @"655-[0-9]{2}-[0-9]{2}-[0-9]{2}|69[0-9]-[0-9]{2}-[0-9]{2}-[0-9]{2}";
         Regex rx = new Regex(numberPattern,
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+        public OrangePhoneTextBox():base()
+        {
+            this.Mask = "000-00-00-00";
+        }
 
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
@@ -27,12 +32,13 @@ namespace SoftwareTas.components
             else
             {
                 this.BackColor = colorError;
+         //       MessageBox.Show(Text);
             }
         }
 
         public override bool IsPhoneNumberValid()
         {
-            return rx.IsMatch(numberPattern);
+            return rx.IsMatch(this.Text);
         }
 
         private void InitializeComponent()

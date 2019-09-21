@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -9,18 +8,16 @@ using System.Windows.Forms;
 
 namespace SoftwareTas.components
 {
-    public class MtnPhoneTextBox : PhoneTextBox
+    public class NextellPhoneTextBox: PhoneTextBox
     {
-        
+        static string numberPattern = @"688-[0-9]{2}-[0-9]{2}-[0-9]{2}";
+        Regex rx = new Regex(numberPattern,
+        RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-       static string mtnNumberPattern = @"651-[0-9]{2}-[0-9]{2}-[0-9]{2}|67[0-9]-[0-9]{2}-[0-9]{2}-[0-9]{2}";
 
-        Regex rx = new Regex(mtnNumberPattern,
-          RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        
-        public MtnPhoneTextBox() : base()
+        public NextellPhoneTextBox():base()
         {
-            this.Mask = @"000-00-00-00";
+            this.Mask = "000-00-00-00";
         }
 
 
@@ -29,15 +26,14 @@ namespace SoftwareTas.components
             base.OnKeyPress(e);
             if (rx.IsMatch(this.Text))
             {
-                this.BackColor =this.colorSucces;
+                this.BackColor = this.colorSucces;
             }
             else
             {
                 this.BackColor = colorError;
             }
-            
-        }
 
+        }
 
         protected override void OnLayout(LayoutEventArgs levent)
         {
@@ -50,7 +46,7 @@ namespace SoftwareTas.components
         /// <returns></returns>
         public override bool IsPhoneNumberValid()
         {
-            return rx.IsMatch(this.Text);
+            return rx.IsMatch(numberPattern);
         }
 
         private void InitializeComponent()

@@ -17,10 +17,10 @@ namespace SoftwareTas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new FormSendMessage());
+            Application.Run(new FormSendMessage());
            // Application.Run(new FormSelectMessage());
          //   Application.Run(new FormEtudiant());
-            Application.Run(new FormRevision1());
+         //   Application.Run(new FormRevision1());
         }
     }
 }

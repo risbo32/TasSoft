@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,27 +26,12 @@ namespace SoftwareTas
                 MessageBox.Show("please enter digits only");
                 e.Handled = true;
             }
-            else
-            {
-                if (textBox6.Text.Length < 10)
-                {
-                  
-                }
-                else
-                {
-                    if (e.KeyChar != (char)Keys.Back)
-                    {
-                        e.Handled = true;
-                        MessageBox.Show("Texte trop long");
-                    }
-                }
-            }
-
+           
         }
 
-        private void textBox6_KeyUp(object sender, KeyEventArgs e)
+        private bool isFormValid()
         {
-            
+            return false;
         }
     }
 }

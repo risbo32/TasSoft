@@ -35,7 +35,7 @@ namespace SoftwareTas.components
             {
                 if (e.KeyChar != (char)Keys.Back)
                 {
-                    MessageBox.Show("Longeur maxi 10 chiffres");
+                   // MessageBox.Show("Longeur maxi 10 chiffres");
                     e.Handled = true;
                 }
             }
@@ -56,10 +56,24 @@ namespace SoftwareTas.components
             // 
             // PhoneTextBox
             // 
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mask = "00-00-00-00";
             this.Text = "  -  -  -";
             this.ResumeLayout(false);
 
+        }
+
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+            if (IsPhoneNumberValid())
+            {
+                this.BackColor = this.colorSucces;
+            }
+            else
+            {
+                this.BackColor = colorError;
+            }
         }
     }
 }

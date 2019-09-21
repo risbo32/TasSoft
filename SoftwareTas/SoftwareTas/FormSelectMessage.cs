@@ -14,26 +14,26 @@ namespace SoftwareTas
     {
         List<String> elements;
         imsdbDataSet.employeeDataTable selectionEmployes = new imsdbDataSet.employeeDataTable();
-        TreeDepartement treeDepartements = new TreeDepartement();
+       // TreeDepartement treeDepartements = new TreeDepartement();
         imsdbDataSet.employeeDataTable employees = new imsdbDataSet.employeeDataTable();
         imsdbDataSet.departmentDataTable departments = new imsdbDataSet.departmentDataTable();
 
         public FormSelectMessage()
         {
             InitializeComponent();
-            Departement college = new Departement { Nom="College charles de gaulles"};
+          //  Departement college = new Departement { Nom="College charles de gaulles"};
             elements = new List<string>();
             elements.Add("College charles de gaulles");
             elements.Add("Section Anglophone");
             elements.Add("Section Francophone");
             elements.Add("Cm2");
             
-            treeDepartements.Visible = false;
+           // treeDepartements.Visible = false;
            
             departmentTableAdapter1.Fill(departments);
             cmBxListe.DataSource = departments;
             cmBxListe.DisplayMember = "deptname";
-            splitContainer1.Panel1.Controls.Add(treeDepartements);
+          //  splitContainer1.Panel1.Controls.Add(treeDepartements);
 
            
             employeeTableAdapter1.Fill(employees);
@@ -57,11 +57,11 @@ namespace SoftwareTas
         private void cmBxListe_DropDown(object sender, EventArgs e)
         {
           //  if (this.Visible == false) return;
-            treeDepartements.Visible = true;
-            treeDepartements.Width = cmBxListe.Width;
-            treeDepartements.Top = cmBxListe.Top +cmBxListe.Height+ 40;
-            treeDepartements.Left = cmBxListe.Left;
-            treeDepartements.BringToFront();
+            //treeDepartements.Visible = true;
+            //treeDepartements.Width = cmBxListe.Width;
+            //treeDepartements.Top = cmBxListe.Top +cmBxListe.Height+ 40;
+            //treeDepartements.Left = cmBxListe.Left;
+            //treeDepartements.BringToFront();
         }
 
         private void btnSend_Click_1(object sender, EventArgs e)
