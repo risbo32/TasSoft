@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("College Le nil");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("College Le nil");
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -36,13 +36,17 @@
             this.treeView2 = new System.Windows.Forms.TreeView();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddDptSelection = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStatusSelectionNumber = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.treeView3 = new System.Windows.Forms.TreeView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -62,7 +66,9 @@
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
             this.splitContainer5.Panel1.SuspendLayout();
+            this.splitContainer5.Panel2.SuspendLayout();
             this.splitContainer5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -143,7 +149,7 @@
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.button2);
+            this.splitContainer3.Panel2.Controls.Add(this.btnAddDptSelection);
             this.splitContainer3.Size = new System.Drawing.Size(200, 256);
             this.splitContainer3.SplitterDistance = 226;
             this.splitContainer3.TabIndex = 0;
@@ -154,22 +160,23 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode2.Name = "Nœud0";
-            treeNode2.Text = "College Le nil";
+            treeNode3.Name = "Nœud0";
+            treeNode3.Text = "College Le nil";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode3});
             this.treeView1.Size = new System.Drawing.Size(200, 226);
             this.treeView1.TabIndex = 1;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
-            // button2
+            // btnAddDptSelection
             // 
-            this.button2.Location = new System.Drawing.Point(24, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ajouter cette selection >>";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddDptSelection.Location = new System.Drawing.Point(24, 2);
+            this.btnAddDptSelection.Name = "btnAddDptSelection";
+            this.btnAddDptSelection.Size = new System.Drawing.Size(154, 23);
+            this.btnAddDptSelection.TabIndex = 0;
+            this.btnAddDptSelection.Text = "Ajouter cette selection >>";
+            this.btnAddDptSelection.UseVisualStyleBackColor = true;
+            this.btnAddDptSelection.Click += new System.EventHandler(this.btnAddDptSelection_Click);
             // 
             // menuStrip1
             // 
@@ -219,6 +226,10 @@
             // splitContainer5.Panel1
             // 
             this.splitContainer5.Panel1.Controls.Add(this.treeView3);
+            // 
+            // splitContainer5.Panel2
+            // 
+            this.splitContainer5.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer5.Size = new System.Drawing.Size(397, 534);
             this.splitContainer5.SplitterDistance = 185;
             this.splitContainer5.TabIndex = 0;
@@ -230,6 +241,42 @@
             this.treeView3.Name = "treeView3";
             this.treeView3.Size = new System.Drawing.Size(397, 185);
             this.treeView3.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nom,
+            this.Prenom,
+            this.Classe});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(397, 345);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            this.Nom.ReadOnly = true;
+            // 
+            // Prenom
+            // 
+            this.Prenom.HeaderText = "Prenom";
+            this.Prenom.Name = "Prenom";
+            this.Prenom.ReadOnly = true;
+            // 
+            // Classe
+            // 
+            this.Classe.HeaderText = "Classe";
+            this.Classe.Name = "Classe";
+            this.Classe.ReadOnly = true;
             // 
             // FormSendMessage
             // 
@@ -263,8 +310,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             this.splitContainer5.Panel1.ResumeLayout(false);
+            this.splitContainer5.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
             this.splitContainer5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +325,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddDptSelection;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.TreeView treeView2;
         private System.Windows.Forms.Button btnAddElevesSelection;
@@ -286,5 +335,9 @@
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.SplitContainer splitContainer5;
         private System.Windows.Forms.TreeView treeView3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Classe;
     }
 }

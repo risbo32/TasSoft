@@ -34,6 +34,10 @@ namespace SoftwareTas
             {
                 TreeNode subNode = root.Nodes.Add(sub.Name);
                 subNode.Tag = sub;
+                foreach(Departement dpt in sub.SubDepartements){
+                    TreeNode dptNode = subNode.Nodes.Add(dpt.Name);
+                    dptNode.Tag = dpt;
+                }
             }
         }
 
@@ -46,6 +50,8 @@ namespace SoftwareTas
                 foreach(Eleve eleve in departement.Eleves)
                 {
                    TreeNode node= treeView2.Nodes.Add($"{eleve.Name} ");
+                    if(e.Node.Checked)
+                    node.Checked = true;
                     node.Tag = eleve;
                 }
             }
@@ -61,7 +67,7 @@ namespace SoftwareTas
                 Eleve eleve =(Eleve) node.Tag;
                 
                 treeView3.Nodes.Add(eleve.Name);
-                
+                dataGridView1.Rows.Add(eleve.Name, eleve.Surname);
             }
         }
 
@@ -83,6 +89,14 @@ namespace SoftwareTas
             List<TreeNode> checked_nodes = new List<TreeNode>();
            // FindCheckedNodes(checked_nodes, trvMeals.Nodes);
             return checked_nodes;
+        }
+
+        
+        private void btnAddDptSelection_Click(object sender, EventArgs e)
+        {
+            List<TreeNode> checkedNodes = new List<TreeNode>();
+            FindCheckedNodes(ref checkedNodes, treeView1.Nodes);
+            MessageBox.Show($"Ajout departements ({checkedNodes.Count}) a la selection actuelle");
         }
     }
 }
