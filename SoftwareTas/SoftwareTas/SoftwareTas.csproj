@@ -54,6 +54,12 @@
     <Compile Include="components\CamtelPhoneTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="components\DepartementTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\MonBouton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="components\MtnPhoneTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="data\DataProvider.cs" />
     <Compile Include="data\Departement.cs" />
     <Compile Include="data\Eleve.cs" />
+    <Compile Include="data\MyDataComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +95,12 @@
     </Compile>
     <Compile Include="FormLoginUser.Designer.cs">
       <DependentUpon>FormLoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrintStudent.Designer.cs">
+      <DependentUpon>FormPrintStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRevision1.cs">
       <SubType>Form</SubType>
@@ -105,6 +120,18 @@
     <Compile Include="FormSendMessage.Designer.cs">
       <DependentUpon>FormSendMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormMainEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMainEleve.Designer.cs">
+      <DependentUpon>FormMainEleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTaskInProgress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,8 +143,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>imsdbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PrettyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="components\MtnPhoneTextBox.resx">
       <DependentUpon>MtnPhoneTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,11 +166,20 @@
     <EmbeddedResource Include="components\PhoneTextBox.resx">
       <DependentUpon>PhoneTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="data\MyDataComponent.resx">
+      <DependentUpon>MyDataComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEtudiant.resx">
       <DependentUpon>FormEtudiant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoginUser.resx">
       <DependentUpon>FormLoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintStudent.resx">
+      <DependentUpon>FormPrintStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRevision1.resx">
       <DependentUpon>FormRevision1.cs</DependentUpon>
@@ -142,8 +190,17 @@
     <EmbeddedResource Include="FormSendMessage.resx">
       <DependentUpon>FormSendMessage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMainEleve.resx">
+      <DependentUpon>FormMainEleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTaskInProgress.resx">
       <DependentUpon>FormTaskInProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,6 +210,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="imsdbDataSet.xsc">
       <DependentUpon>imsdbDataSet.xsd</DependentUpon>
@@ -186,6 +244,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hovered_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selected_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

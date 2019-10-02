@@ -28,13 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.monBouton1 = new SoftwareTas.components.MonBouton();
+            this.SuspendLayout();
+            // 
+            // monBouton1
+            // 
+            this.monBouton1.ClickedImage = null;
+            this.monBouton1.HoverImage = global::SoftwareTas.Properties.Resources.hovered_button;
+            this.monBouton1.Location = new System.Drawing.Point(256, 87);
+            this.monBouton1.Name = "monBouton1";
+            this.monBouton1.NormalImage = global::SoftwareTas.Properties.Resources.normal_button;
+            this.monBouton1.Size = new System.Drawing.Size(292, 78);
+            this.monBouton1.TabIndex = 0;
+            this.monBouton1.Text = "monBouton1";
+            this.monBouton1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.monBouton1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private components.MonBouton monBouton1;
     }
 }
 

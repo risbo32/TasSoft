@@ -53,10 +53,10 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -195,6 +195,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Enregistrer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -290,14 +291,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parent";
             // 
-            // label9
+            // textBox6
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Nom du parent";
+            this.textBox6.Location = new System.Drawing.Point(370, 37);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(262, 20);
+            this.textBox6.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(20, 37);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(262, 20);
+            this.textBox5.TabIndex = 1;
             // 
             // label10
             // 
@@ -308,19 +314,14 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Prenom du parent";
             // 
-            // textBox5
+            // label9
             // 
-            this.textBox5.Location = new System.Drawing.Point(20, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(262, 20);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(370, 37);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(262, 20);
-            this.textBox6.TabIndex = 1;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(20, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Nom du parent";
             // 
             // FormEtudiant
             // 

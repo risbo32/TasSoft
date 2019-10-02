@@ -57,5 +57,30 @@ namespace SoftwareTas.data
             return eleves;
         }
         
+        public Departement DepartementTreeFromDatabase()
+        {
+            imsdbDataSet imsdbDataSet= new SoftwareTas.imsdbDataSet();
+
+            imsdbDataSet.departmentDataTable departments = new imsdbDataSet.departmentDataTable();
+            return new Departement();
+        }
+
+        public static List<Eleve> GetStudentData()
+        {
+            List<Eleve> liste = new List<Eleve>();
+
+            for(int i=0; i< 20; i++)
+            {
+                liste.Add(new Eleve {
+                    Departement = new Departement { Name = "Cm2" },
+                    Id = i,
+                    Surname="Kamga "+i,
+                    Name="Bruno "+i,
+                    Matricule="CM"+i
+                });
+            }
+
+            return liste;
+        }
     }
 }

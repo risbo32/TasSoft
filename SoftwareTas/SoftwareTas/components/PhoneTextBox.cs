@@ -75,5 +75,10 @@ namespace SoftwareTas.components
                 this.BackColor = colorError;
             }
         }
+
+        public virtual string getPhoneNumber()
+        {
+            return "123456778";
+        }
     }
 }

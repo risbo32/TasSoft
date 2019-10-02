@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareTas.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,10 +18,14 @@ namespace SoftwareTas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSendMessage());
+           // Application.Run(new Form1());
+         // Application.Run(new FormSendMessage());
            // Application.Run(new FormSelectMessage());
-         //   Application.Run(new FormEtudiant());
-         //   Application.Run(new FormRevision1());
+          //  Application.Run(new FormEtudiant());
+         //  Application.Run(new FormRevision1());
+           Application.Run(new LoadingForm());
+         //   Application.Run(new FormPrintStudent());
+         //   Application.Run(new FormMainEleve());
         }
     }
 }
